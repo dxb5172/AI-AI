@@ -8,22 +8,60 @@ Final project for the Building AI course
 
 ## Summary
 
-Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
+Creating a real-time happy face recognition system for tracking customer, employee, and stakeholder satisfaction is an interesting and challenging project that combines computer vision and AI techniques. Here's a high-level overview of how you might approach this project:
 
 
 ## Background
 
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
+Data Collection and Preparation:
 
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
+Gather a diverse dataset of facial images with different expressions, including happy faces. This dataset will be used to train and validate your AI model.
+Annotate the dataset to label each image with the corresponding emotion (e.g., happy, neutral, sad).
+AI Model Selection:
+
+Choose a suitable AI model architecture for facial emotion recognition. Convolutional Neural Networks (CNNs) are commonly used for this task.
+Pre-trained models like VGG, ResNet, or custom CNN architectures can be used as a starting point.
+Data Preprocessing and Augmentation:
+
+Preprocess the images by resizing, normalizing, and augmenting the data to improve model generalization.
+Model Training:
+
+Split your dataset into training, validation, and testing sets.
+Train the selected AI model using the training data. Fine-tune the model to improve its performance.
+Monitor the model's performance on the validation set and adjust hyperparameters as needed.
+Real-Time Face Detection:
+
+Implement a face detection module that can identify and track faces in real-time using a webcam or other camera feed.
+Emotion Recognition:
+
+Integrate the trained emotion recognition model into the system to analyze the detected faces and predict emotions.
+Create a threshold or criteria for classifying a detected face as "happy."
+Real-Time Tracking and Satisfaction Analysis:
+
+When a happy face is detected, record the associated timestamp, location, and other relevant data.
+If possible, use facial landmark detection to gather additional insights about the detected face's features and expressions.
+Data Storage and Visualization:
+
+
+Regularly update and fine-tune the AI model as new data becomes available to improve its accuracy.
 
 
 ## How is it used?
 
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
+Store the collected data in a structured database or data storage system.
+Create visualizations or dashboards that display real-time and historical data on satisfaction levels.
+Feedback Mechanism:
+
+Consider integrating a feedback mechanism to validate the accuracy of the system's predictions. For instance, allow users to provide feedback on whether the system correctly identified their emotions.
+Privacy and Ethical Considerations:
+
+Ensure that the system respects privacy regulations and guidelines. Obtain necessary consents and anonymize any collected data as needed.
+Deployment and Testing:
+
+Deploy the system in the desired environment (store, office, meeting room, etc.).
+Test the system thoroughly in real-world scenarios and make necessary adjustments based on user feedback and system performance.
+Continuous Improvement:
+
 
 Images will make your README look nice!
 Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
